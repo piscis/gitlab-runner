@@ -14,7 +14,7 @@ RUN echo "deb https://packages.gitlab.com/runner/gitlab-ci-multi-runner/ubuntu/ 
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-RUN wget -O /docker https://get.docker.com/builds/Linux/x86_64/docker-1.9.1
+RUN wget -O /docker https://get.docker.com/builds/Linux/x86_64/docker-1.8.3
 RUN chmod +x /docker
 
 ADD entrypoint /
